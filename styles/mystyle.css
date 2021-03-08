@@ -1,10 +1,28 @@
-div {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+.search-container {
     text-align: center;
     position: relative;
     top: 10em;
   }
 
-input{
+.search-container input {
     border-radius: 20px;
     border: none;
     padding: 10px;
@@ -12,46 +30,47 @@ input{
     height: 40px;
     width: 500px;
     border:1px solid #eaeaea;
-    outline:none;
+    outline: none;
+    vertical-align: top;
 }
 
-input[type="submit"] {
-  margin-left: -50px;
-  height: 30px;
+.search-container input:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-container input[type="submit"] {
+  margin-left: -55px;
+  height: 35px;
   width: 30px;
   background-color: transparent;
   background-image: url(../images/googlemic.png);
-  background-size: contain;
+  background-size: cover;
   cursor: pointer;
 }
 
-input:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.search-button {
+.search-container .search-button {
   background-color: rgb(240, 240, 240);
-  border: none;
   color: black;
   padding: 10px 24px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 14px;
   margin: 4px 2px;
-  cursor: pointer;
+}
+
+.search-container .search-button:hover {
+  border: 1px solid #d1d1d1;
 }
 
 .sign-in-button {
   background-color: rgb(81, 127, 187);
-  border: none;
   color: white;
   padding: 5px 18px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 14px;
-  margin: 10px 2px;
+  margin: 10px 12px;
+  cursor: default;
 }
 
 .apps-button {
@@ -61,35 +80,16 @@ input:hover{
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
-  cursor: pointer;
-  border: none;
   padding: 5px 18px;
-  display: inline-block;
   margin: 10px 2px;
 }
 
-.search-button:hover {
-  border: 1px solid #d1d1d1;
-}
-
 .header-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: fixed;
   top: 0;
-  width: 98%;
 }
 
 .footer-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: fixed;
   bottom: 0;
-  width: 98%;
   background-color: rgb(240, 240, 240);
 }
 
