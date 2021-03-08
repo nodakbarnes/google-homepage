@@ -1,4 +1,114 @@
 div {
     text-align: center;
+    position: relative;
+    top: 10em;
   }
-  
+
+input{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    height: 40px;
+    width: 500px;
+    border:1px solid #eaeaea;
+    outline:none;
+}
+
+input[type="submit"] {
+  margin-left: -50px;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  background-image: url("/images/googlemic.png");
+  background-size: contain;
+  cursor: pointer;
+}
+
+input:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-button {
+  background-color: rgb(240, 240, 240);
+  border: none;
+  color: black;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.sign-in-button {
+  background-color: rgb(81, 127, 187);
+  border: none;
+  color: white;
+  padding: 5px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px 2px;
+}
+
+.apps-button {
+  background-color: white;
+  background-image: url(/images/apps.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: none;
+  padding: 5px 18px;
+  display: inline-block;
+  margin: 10px 2px;
+}
+
+.search-button:hover {
+  border: 1px solid #d1d1d1;
+}
+
+.header-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 98%;
+}
+
+.footer-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 98%;
+  background-color: rgb(240, 240, 240);
+}
+
+.left-li {
+  float: left;
+}
+
+.right-li {
+  float: right;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
