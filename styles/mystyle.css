@@ -1,6 +1,10 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
 * {
   margin: 0;
   padding: 0;
+  font-size: 14px;
+  font-family: arial,sans-serif;
 }
 
 button {
@@ -31,21 +35,31 @@ ul {
     width: 500px;
     border:1px solid #eaeaea;
     outline: none;
-    vertical-align: top;
+    vertical-align: middle;
+    text-indent: 32px;
 }
 
-.search-container input:hover{
+.search-container input:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .search-container input[type="submit"] {
-  margin-left: -55px;
-  height: 35px;
+  margin-left: -50px;
+  height: 30px;
   width: 30px;
   background-color: transparent;
   background-image: url(../images/googlemic.png);
   background-size: cover;
   cursor: pointer;
+}
+
+.search-container input[type="submit"]:hover {
+  box-shadow: none;
+}
+
+.search-container .fa-search {
+  position: relative;
+  left: -490px;
 }
 
 .search-container .search-button {
@@ -56,6 +70,7 @@ ul {
   text-decoration: none;
   font-size: 14px;
   margin: 4px 2px;
+  border-radius: 5px;
 }
 
 .search-container .search-button:hover {
